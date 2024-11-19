@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>View Items</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+    <h1>Items in Inventory</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item['name'] }} - Quantity: {{ item['quantity'] }} - Price: ${{ item['price'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>

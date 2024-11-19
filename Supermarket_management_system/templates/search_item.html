@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Item</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+    <h1>Search for an Item</h1>
+    <form action="/search_item" method="post">
+        <label>Enter Item Name: <input type="text" name="name"></label><br>
+        <input type="submit" value="Search">
+    </form>
+    {% if found %}
+        <h2>Item Found:</h2>
+        <p>Name: {{ item['name'] }} - Quantity: {{ item['quantity'] }} - Price: ${{ item['price'] }}</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

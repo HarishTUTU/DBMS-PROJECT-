@@ -1,0 +1,113 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdf4; /* Light green background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2d6a4f; /* Dark green for headings */
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1b4332; /* Deep green for links */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2d6a4f; /* Lighter green on hover */
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #52b788; /* Soft green for link background */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+    width: 200px;
+}
+
+ul li a:hover {
+    background-color: #40916c; /* Darker green on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #b7e4c7; /* Light green border */
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #2d6a4f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #40916c;
+}
+
+li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #1b4332;
+}
+
+.back-link a {
+    color: #1b4332;
+}
+
+.back-link a:hover {
+    color: #2d6a4f;
+}
